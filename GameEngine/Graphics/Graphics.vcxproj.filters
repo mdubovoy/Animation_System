@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Library Include="..\OpenGL\GLUT\lib\freeglut_static.lib">
+      <Filter>_OpenGL</Filter>
+    </Library>
+    <Library Include="..\File\lib\FileSystemDebug.lib">
+      <Filter>_File</Filter>
+    </Library>
+    <Library Include="..\File\lib\FileSystemRelease.lib">
+      <Filter>_File</Filter>
+    </Library>
+    <Library Include="..\OpenGL\GLTools\lib\gltools.lib">
+      <Filter>_OpenGL</Filter>
+    </Library>
+    <Library Include="..\Time\lib\TimeDebug.lib">
+      <Filter>Time</Filter>
+    </Library>
+    <Library Include="..\Time\lib\TimeRelease.lib">
+      <Filter>Time</Filter>
+    </Library>
+    <Library Include="..\Math\lib\MathEngineDebug.lib">
+      <Filter>_Math</Filter>
+    </Library>
+    <Library Include="..\Math\lib\MathEngineRelease.lib">
+      <Filter>_Math</Filter>
+    </Library>
+    <Library Include="..\PCSTree\lib\PCSTreeDebug.lib">
+      <Filter>_PCSTree</Filter>
+    </Library>
+    <Library Include="..\PCSTree\lib\PCSTreeRelease.lib">
+      <Filter>_PCSTree</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{73f7aa3a-7ebb-45d5-af3f-340de55bc2c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{46649994-6973-461d-9de1-7d27cfccd5aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Renderer">
+      <UniqueIdentifier>{a92b7fc1-c7b5-4842-b142-51747991bc3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_PCSTree">
+      <UniqueIdentifier>{e8b8b4e3-19d7-4bf2-b110-bb68e9f7036b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_OpenGL">
+      <UniqueIdentifier>{228f3bf9-68c3-4a2c-bfff-594c58d088c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_File">
+      <UniqueIdentifier>{b016b623-0d66-4e9f-b99e-bd5388020bca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Math">
+      <UniqueIdentifier>{fad007ac-2b78-4ea7-bb46-fbdbfb91269c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Geometry">
+      <UniqueIdentifier>{6caf03b2-da89-4e55-a312-522e8a6c2add}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GraphicsObjects">
+      <UniqueIdentifier>{2f9c94ce-1b51-40a8-a998-4a23b3cf70e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archiver">
+      <UniqueIdentifier>{23c57ece-9fb5-4675-8b95-a2f266ee3d93}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Time">
+      <UniqueIdentifier>{88728a25-a2ef-4496-8252-c67e6f90ee89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Animation">
+      <UniqueIdentifier>{2fd3c97b-d7a0-46ce-8619-11067a00bf1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Animation\TeddyBear">
+      <UniqueIdentifier>{802aad63-754f-4936-bc2e-7c7294f087b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Animation\TwoBone">
+      <UniqueIdentifier>{a39b94f0-0d0d-4fc9-a4db-b3fc9d537bfe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Graphics.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="UserInterface.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="GlobalState.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsObjectManager.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderScene.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderState.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="FrustumCalc.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="Pyramid.cpp">
+      <Filter>Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Cube.cpp">
+      <Filter>Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="CubeObject.cpp">
+      <Filter>GraphicsObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="PyramidObject.cpp">
+      <Filter>GraphicsObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="PieWedge.cpp">
+      <Filter>Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="NullObject.cpp">
+      <Filter>GraphicsObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="PieWedgeObject.cpp">
+      <Filter>GraphicsObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsObject.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Archiver\include\eat.cpp">
+      <Filter>Archiver</Filter>
+    </ClCompile>
+    <ClCompile Include="SpaceFrigateObject.cpp">
+      <Filter>GraphicsObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="PumpkinObject.cpp">
+      <Filter>GraphicsObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="WatchTowerObject.cpp">
+      <Filter>GraphicsObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="MayanPyramidObject.cpp">
+      <Filter>GraphicsObjects</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryModel.cpp">
+      <Filter>Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Anim.cpp">
+      <Filter>Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameBucket.cpp">
+      <Filter>Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimationManager.cpp">
+      <Filter>Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimTeddyBear.cpp">
+      <Filter>Animation\TeddyBear</Filter>
+    </ClCompile>
+    <ClCompile Include="BearWalk.cpp">
+      <Filter>Animation\TeddyBear</Filter>
+    </ClCompile>
+    <ClCompile Include="BearIdle.cpp">
+      <Filter>Animation\TeddyBear</Filter>
+    </ClCompile>
+    <ClCompile Include="AnimTwoBone.cpp">
+      <Filter>Animation\TwoBone</Filter>
+    </ClCompile>
+    <ClCompile Include="Skeleton.cpp">
+      <Filter>Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="TwoBones.cpp">
+      <Filter>Animation\TwoBone</Filter>
+    </ClCompile>
+    <ClCompile Include="TeddyBearBones.cpp">
+      <Filter>Animation\TeddyBear</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="UserInterface.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="GlobalState.h">
+      <Filter>Source</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsObject.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsObjectManager.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLWrapper.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderScene.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderState.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureMap.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="FrustumCalc.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\File\include\File.h">
+      <Filter>_File</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PCSTree\include\PCSNode.h">
+      <Filter>_PCSTree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\PCSTree\include\PCSTree.h">
+      <Filter>_PCSTree</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsObjectFileHdr.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Pyramid.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryModel.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="Cube.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="CubeObject.h">
+      <Filter>GraphicsObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="PyramidObject.h">
+      <Filter>GraphicsObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureData.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureManager.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderMap.h">
+      <Filter>Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="PieWedge.h">
+      <Filter>Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="NullObject.h">
+      <Filter>GraphicsObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="PieWedgeObject.h">
+      <Filter>GraphicsObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Archiver\include\ChunkHeader.h">
+      <Filter>Archiver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Archiver\include\eat.h">
+      <Filter>Archiver</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Archiver\include\PackageHeader.h">
+      <Filter>Archiver</Filter>
+    </ClInclude>
+    <ClInclude Include="SpaceFrigateObject.h">
+      <Filter>GraphicsObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="PumpkinObject.h">
+      <Filter>GraphicsObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="WatchTowerObject.h">
+      <Filter>GraphicsObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="MayanPyramidObject.h">
+      <Filter>GraphicsObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\include\MathEngine.h">
+      <Filter>_Math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Time\include\Time.h">
+      <Filter>Time</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Time\include\Timer.h">
+      <Filter>Time</Filter>
+    </ClInclude>
+    <ClInclude Include="Anim.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameBucket.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Math\include\MathApp.h">
+      <Filter>_Math</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationManager.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimTeddyBear.h">
+      <Filter>Animation\TeddyBear</Filter>
+    </ClInclude>
+    <ClInclude Include="BearWalk.h">
+      <Filter>Animation\TeddyBear</Filter>
+    </ClInclude>
+    <ClInclude Include="BearIdle.h">
+      <Filter>Animation\TeddyBear</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimTwoBone.h">
+      <Filter>Animation\TwoBone</Filter>
+    </ClInclude>
+    <ClInclude Include="Skeleton.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="TwoBones.h">
+      <Filter>Animation\TwoBone</Filter>
+    </ClInclude>
+    <ClInclude Include="TeddyBearBones.h">
+      <Filter>Animation\TeddyBear</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,9 @@
+#ifndef SHADER_MAP_H
+#define SHADER_MAP_H
+
+enum ShaderMap
+{
+    FLAT, POINT_LIGHT_DIFF, TEXTURE_REPLACE, TEXTURE_POINT_LIGHT_DIFF
+};
+
+#endif

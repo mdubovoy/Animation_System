@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\File\lib\FileSystemDebug.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="..\File\lib\FileSystemRelease.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="..\Math\lib\MathEngineDebug.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="..\Math\lib\MathEngineRelease.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="..\OpenGL\GLTools\lib\gltools.lib" />
+    <Library Include="..\OpenGL\GLUT\lib\freeglut_static.lib" />
+    <Library Include="..\PCSTree\lib\PCSTreeDebug.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="..\PCSTree\lib\PCSTreeRelease.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="..\Time\lib\TimeDebug.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </Library>
+    <Library Include="..\Time\lib\TimeRelease.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Archiver\include\eat.cpp" />
+    <ClCompile Include="Anim.cpp" />
+    <ClCompile Include="AnimTwoBone.cpp" />
+    <ClCompile Include="AnimationManager.cpp" />
+    <ClCompile Include="AnimTeddyBear.cpp" />
+    <ClCompile Include="BearIdle.cpp" />
+    <ClCompile Include="BearWalk.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Cube.cpp" />
+    <ClCompile Include="CubeObject.cpp" />
+    <ClCompile Include="FrameBucket.cpp" />
+    <ClCompile Include="FrustumCalc.cpp" />
+    <ClCompile Include="GeometryModel.cpp" />
+    <ClCompile Include="GlobalState.cpp" />
+    <ClCompile Include="Graphics.cpp" />
+    <ClCompile Include="GraphicsObject.cpp" />
+    <ClCompile Include="GraphicsObjectManager.cpp" />
+    <ClCompile Include="MayanPyramidObject.cpp" />
+    <ClCompile Include="NullObject.cpp" />
+    <ClCompile Include="PieWedge.cpp" />
+    <ClCompile Include="PieWedgeObject.cpp" />
+    <ClCompile Include="PumpkinObject.cpp" />
+    <ClCompile Include="Pyramid.cpp" />
+    <ClCompile Include="PyramidObject.cpp" />
+    <ClCompile Include="RenderScene.cpp" />
+    <ClCompile Include="RenderState.cpp" />
+    <ClCompile Include="Skeleton.cpp" />
+    <ClCompile Include="SpaceFrigateObject.cpp" />
+    <ClCompile Include="TeddyBearBones.cpp" />
+    <ClCompile Include="TextureManager.cpp" />
+    <ClCompile Include="TwoBones.cpp" />
+    <ClCompile Include="UserInterface.cpp" />
+    <ClCompile Include="WatchTowerObject.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Archiver\include\ChunkHeader.h" />
+    <ClInclude Include="..\Archiver\include\eat.h" />
+    <ClInclude Include="..\Archiver\include\PackageHeader.h" />
+    <ClInclude Include="..\File\include\File.h" />
+    <ClInclude Include="..\Math\include\MathApp.h" />
+    <ClInclude Include="..\Math\include\MathEngine.h" />
+    <ClInclude Include="..\PCSTree\include\PCSNode.h" />
+    <ClInclude Include="..\PCSTree\include\PCSTree.h" />
+    <ClInclude Include="..\Time\include\Time.h" />
+    <ClInclude Include="..\Time\include\Timer.h" />
+    <ClInclude Include="Anim.h" />
+    <ClInclude Include="AnimationManager.h" />
+    <ClInclude Include="AnimTwoBone.h" />
+    <ClInclude Include="BearIdle.h" />
+    <ClInclude Include="BearWalk.h" />
+    <ClInclude Include="Skeleton.h" />
+    <ClInclude Include="AnimTeddyBear.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Cube.h" />
+    <ClInclude Include="CubeObject.h" />
+    <ClInclude Include="FrameBucket.h" />
+    <ClInclude Include="FrustumCalc.h" />
+    <ClInclude Include="GeometryModel.h" />
+    <ClInclude Include="GlobalState.h" />
+    <ClInclude Include="GraphicsObject.h" />
+    <ClInclude Include="GraphicsObjectFileHdr.h" />
+    <ClInclude Include="GraphicsObjectManager.h" />
+    <ClInclude Include="MayanPyramidObject.h" />
+    <ClInclude Include="NullObject.h" />
+    <ClInclude Include="OpenGLWrapper.h" />
+    <ClInclude Include="PieWedge.h" />
+    <ClInclude Include="PieWedgeObject.h" />
+    <ClInclude Include="PumpkinObject.h" />
+    <ClInclude Include="Pyramid.h" />
+    <ClInclude Include="PyramidObject.h" />
+    <ClInclude Include="RenderScene.h" />
+    <ClInclude Include="RenderState.h" />
+    <ClInclude Include="ShaderMap.h" />
+    <ClInclude Include="SpaceFrigateObject.h" />
+    <ClInclude Include="TeddyBearBones.h" />
+    <ClInclude Include="TextureData.h" />
+    <ClInclude Include="TextureManager.h" />
+    <ClInclude Include="TextureMap.h" />
+    <ClInclude Include="TwoBones.h" />
+    <ClInclude Include="UserInterface.h" />
+    <ClInclude Include="WatchTowerObject.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{614F84F4-5DBF-47AE-B74D-B4184D22ADA2}</ProjectGuid>
+    <RootNamespace>Pyramid</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(SolutionDir)OpenGL\GLTools\include;$(SolutionDir)OpenGL\GLUT\include;$(SolutionDir)Math\include;$(SolutionDir)File\include;$(SolutionDir)PCSTree\include;$(SolutionDir)Archiver\include;$(SolutionDir)Time\include</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(SolutionDir)OpenGL\GLTools\include;$(SolutionDir)OpenGL\GLUT\include;$(SolutionDir)Math\include;$(SolutionDir)File\include;$(SolutionDir)PCSTree\include;$(SolutionDir)Archiver\include;$(SolutionDir)Time\include</AdditionalIncludeDirectories>
+      <ProgramDataBaseFileName>
+      </ProgramDataBaseFileName>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreSpecificDefaultLibraries>LIBCMTD;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
